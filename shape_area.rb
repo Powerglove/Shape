@@ -1,3 +1,4 @@
+
 require 'byebug'
 
 class Shape
@@ -21,7 +22,7 @@ class Shape
     _area
   end
 
-  
+
 end
 
 class Square < Shape
