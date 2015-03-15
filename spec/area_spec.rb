@@ -1,6 +1,5 @@
+RSpec.describe "Triangle" do
 
-RSpec.describe "Shape" do
-  
     it "{Triangle < Shape}" do
       triangle = Triangle.new(5,4)
       t_area = triangle.area

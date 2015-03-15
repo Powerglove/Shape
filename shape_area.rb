@@ -1,11 +1,8 @@
-
-require 'byebug'
-
 class Shape
 
   def initialize(base, height)
     @base = base
-    @height = height
+    @height = heighgitt
   end
 
   def base
@@ -29,17 +26,23 @@ class Shape
 end
 
 class Square < Shape
-  def initialize(base)
-    @base = base
-    @height = base
-  end
+
+  attr_reader :base, :height
+
+  # def initialize(base)
+  #   @base = base
+  #   @height = base
+  # end
 end
 
 class Circle < Shape
-  def initialize(radius)
-    @base = radius
-    @height = radius
-  end
+
+  attr_reader :base, :height
+
+  # def initialize(radius)
+  #   @base = radius
+  #   @height = radius
+  # end
 
   def area
     _area = Math::PI * super
@@ -48,11 +51,13 @@ end
 
 class Triangle < Shape
 
-  def initialize(base, height)
-    super
-    @base = base
-    @height = height
-  end
+  attr_reader :base, :height
+
+  # def initialize(base, height)
+  #   super
+  #   @base = base
+  #   @height = height
+  # end
 
   def area
     _area = super / 2
